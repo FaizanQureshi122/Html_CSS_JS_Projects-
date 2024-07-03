@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.tabs {
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab-links {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #f9f9f9;
+    border: none;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.tab-link:hover {
+    background: #e0e0e0;
+}
+
+.tab-link.active {
+    background: #fff;
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}

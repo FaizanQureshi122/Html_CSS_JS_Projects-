@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tts-container">
+        <h1>Text to Speech</h1>
+        <textarea id="text-input" rows="5" placeholder="Enter text here..."></textarea>
+        <div class="controls">
+            <label for="speed">Speed: <span id="speed-value">1</span>x</label>
+            <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1">
+        </div>
+        <div class="buttons">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
